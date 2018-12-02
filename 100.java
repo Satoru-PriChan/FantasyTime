@@ -41,6 +41,7 @@ public class Main {
                 while (x != 1) {
                     if(x % 2 == 1){
                         x = 3 * x + 1;
+                    	//shift operator is faster than division operator
                         x >>= 1;
                         cycleLength += 2;
                     } else {
