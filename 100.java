@@ -16,7 +16,7 @@ public class Main {
         	//don't forget reset maxCycleLength each time
             maxCycleLength = 0;
             
-            //i and j's are unclear whether either one is greater, so check it.
+            //i and j's are unclear in whether either one is greater, so check it.
             if (i > j) {
                 max = i;
                 min = j;
@@ -25,7 +25,7 @@ public class Main {
                 min = i;
             }
             
-            //short cut:  you don't have to calculate value from 0 to the half value of max value. Because this problem tells us 
+            //short cut:  you only need to calculate value from 0 to the half value of max value. Because this problem tells us 
             //to submit just the MAX cycle length.
             //for example max: 200 min: 0 -> max: 200 min: 100
             //max: 100 min: 25 -> max: 100 min: 50
@@ -49,6 +49,7 @@ public class Main {
                     }
                 }
                 
+            	//debug
                 //System.out.println("cycleLength: " + cycleLength + " min: " + min + " x: " + x);
                 if (cycleLength > maxCycleLength) {
                     maxCycleLength = cycleLength;
