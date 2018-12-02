@@ -25,7 +25,7 @@ public class Main {
                 min = i;
             }
             
-            //short cut:  you only need to calculate value from 0 to the half value of max value. Because this problem tells us 
+            //short cut:  you only need to calculate value from max to the half value of max. Because this problem tells us 
             //to submit just the MAX cycle length.
             //for example max: 200 min: 0 -> max: 200 min: 100
             //max: 100 min: 25 -> max: 100 min: 50
