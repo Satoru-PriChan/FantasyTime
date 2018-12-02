@@ -25,6 +25,15 @@ public class Main {
                 min = i;
             }
             
+            //short cut:  you don't have to calculate value from 0 to the half value of max value. Because this problem tells us 
+            //to submit just the MAX cycle length.
+            //for example max: 200 min: 0 -> max: 200 min: 100
+            //max: 100 min: 25 -> max: 100 min: 50
+            if (min < (max / 2)) {
+                min = (max / 2);
+            }
+            
+            
             //outer loop i ~ j (or j ~ i)
             for (cycleLength = 1;min <= max; min++, cycleLength = 1) {
                 x = min;
