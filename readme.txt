@@ -1,1 +1,1 @@
-This reository is for programming solution to problems in "UVa Online Judge". 
+This reository is for programming solution to problems in "UVa Online Judge"(https://uva.onlinejudge.org/index.php). 
